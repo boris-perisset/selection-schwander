@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+    /* Typography */
+  --heading-font: 'PT Serif', serif;
+  --body-font: 'Jost', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-600: clamp(2.025rem, 1.5298rem + 2.1127vw, 3.43125rem);
+  --font-size-500: clamp(1.8rem, 1.4655rem + 1.4272vw, 2.75rem);
+  --font-size-400: clamp(1.6rem, 1.3887rem + 0.9014vw, 2.2rem);
+  --font-size-300: clamp(1.425rem, 1.3084rem + 0.4977vw, 1.75625rem);
+  --font-size-200: clamp(1.26875rem, 1.2203rem + 0.2066vw, 1.40625rem);
+  --font-size-100: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  --font-size-080: 0.9rem;
+  --font-size-060: 0.8rem;
+  
+ 
+  /* Font Weight */
+  --font-regular: 400;
+  --font-bold: 700;
+
+  
+  /* Line Height are in EM to be realtive to its Fontsize*/
+  --lineheight-100: 1em;
+  --lineheight-150: 1.1em;
+  --lineheight-200: 1.2em;
+  --lineheight-300: 1.4em;
+ 
+  
+  /* Colors */
+  --bordeaux-default: #83183A;
+  --bordeaux-medium: #AF2366;
+  --bordeaux-bright: #D26082;
+  --bordeaux-light: #FFB2B2;
+
+  --teal-default: #154D5E;
+  --teal-medium: #32637E;
+  --teal-bright: #7AAECB;
+  --teal-light: #C4E6F0;
+
+  --gold-default: #B2A378;
+  --gold-medium: #DFD3A9;
+  --gold-bright: #F3EBD5;
+  --gold-light: #FBF7F4;
+  
+  --anthrazit-default: #333333;
+  --anthrazit-medium: #707070;
+  --anthrazit-bright: #AAAAAA;
+  --anthrazit-light: #EAEAEA;
+  
+  --savoy-default: #7BBF63;
+  --savoy-medium: #A6D794;
+  --savoy-bright: #D2EBBA;
+  --savoy-light: #F6F6E8;
+  
+  --white: #FFFFFF;
+  
+  /*Some Spacing Tests*/
+  --spacing-ratio: 1.618em;
+  --type-space-080: 0.618em;
+  --type-space-100: 1em;
+  --type-space-200: calc(1em + var(--spacing-ratio));
+  --type-space-300: calc(1em + var(--spacing-ratio) * 2);
+  --type-space-400: calc(1em + var(--spacing-ratio) * 3);
+  
+   
+  /* Tokens */
+  --corner-default: 0.50em;
+  --corner-large: 2em;
+  --scale-100: 1;
+  --scale-150: 1.05;
+  --scale-200: 1.1;
+
+}
+
+::selection {
+  color: var(--teal-default);
+  background: var(--teal-light);
+}
+
+html {
+  font-family: var(--body-font);
+  line-height: var(--lineheight-200);
+  font-size: 100%;
+  font-weight: var(--font-regular);
+  color: var(--anthrazit-default);
+}
+
+
+/* TYPOGRAPHY */
+
+.font-600, .font-500, .font-400, .font-300, .font-200, .font-100, .font-100-base {
+    font-family: var(--heading-font);
+    font-weight: var(--font-bold);
+    line-height: var(--lineheight-200);
+    margin-bottom: var(--type-space-080);
+}
+
+/*Size in VW of Max-Font-Size*/
+.font-600 {
+  font-size: var(--font-size-600);
+  line-height: var(--lineheight-150);
+}
+
+.font-500 {
+  font-size: var(--font-size-500);
+}
+
+.font-400 {
+  font-size: var(--font-size-400);
+}
+
+.font-300 {
+  font-size: var(--font-size-300);
+}
+
+.font-200 {
+  font-size: var(--font-size-200);
+}
+
+.font-100 {
+   font-size: var(--font-size-100);
+}
+
+.font-100-base {
+  font-size: var(--font-size-100);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-300);
+  margin-bottom:  var(--type-space-080);
+  max-width: 75ch;
+}
+
+.font-080 {
+  font-size: var(--font-size-080);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-200);
+  margin-bottom:  var(--type-space-080);
+}
+
+.font-060 {
+  font-size: var(--font-size-060);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-200);
+  margin-bottom:  var(--type-space-080);
+}
+
+/* Button */
+
+.button {
+  padding: var(--type-space-100);
+  border: none;
+  border-radius: var(--corner-large);
+  font-family: var(--heading-font);
+  font-size: var(--font-100);
+  cursor: pointer;
+  scale: var(--scale-100);
+  transition-duration: 400ms;
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--bordeaux-default);
+}
+
+.primary:hover {
+  background-color: var(--bordeaux-medium);
+  scale: var(--scale-150);
+}
+
+.secondary {
+  color: var(--teal-default);
+  background-color: var(--teal-light);
+}
+
+.secondary:hover {
+  background-color: var(--teal-bright);
+  scale: var(--scale-150);
+}
+
+.terziary {
+  color: var(--anthrazit-default);
+  background-color: var(--white);
+}
+
+.terziary:hover {
+  color: var(--teal-default);
+  background-color: var(--teal-light);
+  scale: var(--scale-150);
+}
+
+
+
+/* Layout of this example*/
+
+.styleguide-box {
+  padding: 8vw;
+}
+
+.section-spacing {
+  margin-bottom: 8vw;
+}
+
+.bg-primary {
+  background-color: var(--bordeaux-default);
+  padding: 4vw;
+  color: var(--white);
+  border-radius: var(--corner-default);
+}
+
+.gray {
+  color: var(--anthrazit-bright);
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+.circle {
+  width: 3em;
+  height: 3em;
+  border-radius: 3em;
+}
+
+.bordeaux-default {
+background-color: var(--bordeaux-default)
+}
+
+.bordeaux-medium {
+background-color: var(--bordeaux-medium)
+}
+
+.bordeaux-bright {
+background-color: var(--bordeaux-bright)
+}
+
+.bordeaux-light {
+background-color: var(--bordeaux-light)
+}
+
+.teal-default {
+background-color: var(--teal-default)
+}
+
+.teal-medium {
+background-color: var(--teal-medium)
+}
+
+.teal-bright {
+background-color: var(--teal-bright)
+}
+
+.teal-light {
+background-color: var(--teal-light)
+}
+
+.gold-default {
+background-color: var(--gold-default)
+}
+
+.gold-medium {
+background-color: var(--gold-medium)
+}
+
+.gold-bright {
+background-color: var(--gold-bright)
+}
+
+.gold-light {
+background-color: var(--gold-light)
+}
+
+.anthrazit-default {
+background-color: var(--anthrazit-default)
+}
+
+.anthrazit-medium {
+background-color: var(--anthrazit-medium)
+}
+
+.anthrazit-bright {
+background-color: var(--anthrazit-bright)
+}
+
+.anthrazit-light {
+background-color: var(--anthrazit-light)
+}
+
+.savoy-default {
+background-color: var(--savoy-default)
+}
+
+.savoy-medium {
+background-color: var(--savoy-medium)
+}
+
+.savoy-bright {
+background-color: var(--savoy-bright)
+}
+
+.savoy-light {
+background-color: var(--savoy-light)
+}
