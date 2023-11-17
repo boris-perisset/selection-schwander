@@ -1,8 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=PT+Serif:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Jost';
+  src: url('fonts/jost/Jost-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Swift';
+  src: url('fonts/swift/Swift-04-Regular.otf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'Swift';
+  src: url('fonts/swift/Swift-07-Bold.otf');
+  font-weight: bold;
+}
+
+
 
 :root {
     /* Typography */
-  --heading-font: 'PT Serif', serif;
+  --heading-font: 'Swift', serif;
   --body-font: 'Jost', sans-serif;
   
   /* Font Sizes */
