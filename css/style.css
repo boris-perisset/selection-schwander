@@ -75,7 +75,12 @@
   
   /*Some Spacing Tests*/
   --spacing-ratio: 1.618em;
-  --type-space-080: 0.618em;
+  --type-space-020: 0.2em;
+  --type-space-030: 0.3em;
+  --type-space-040: 0.4em;
+  --type-space-050: 0.5em;
+  --type-space-060: 0.6em;
+  --type-space-080: 0.8em;
   --type-space-100: 1em;
   --type-space-200: calc(1em + var(--spacing-ratio));
   --type-space-300: calc(1em + var(--spacing-ratio) * 2);
@@ -169,38 +174,71 @@ html {
   border: none;
   border-radius: var(--corner-large);
   font-family: var(--heading-font);
-  font-size: var(--font-100);
+  font-size: var(--font-size-100);
+  line-height: var(--lineheight-100);
   cursor: pointer;
   scale: var(--scale-100);
   transition-duration: 400ms;
 }
 
-.primary {
+.button--small {
+  padding-top: var(--type-space-050);
+  padding-bottom: var(--type-space-050);
+  padding-left: var(--type-space-100);
+  padding-right: var(--type-space-100);
+  font-family: var(--body-font);
+  font-size: var(--font-size-080);
+}
+
+.button--tiny {
+  padding-top: var(--type-space-030);
+  padding-bottom: var(--type-space-030);
+  padding-left: var(--type-space-080);
+  padding-right: var(--type-space-080);
+  font-family: var(--body-font);
+  font-size: var(--font-size-060);
+}
+
+.button--primary {
   color: var(--white);
   background-color: var(--bordeaux-default);
 }
 
-.primary:hover {
+.button--primary:hover {
   background-color: var(--bordeaux-medium);
   scale: var(--scale-150);
 }
 
-.secondary {
+.button--secondary {
   color: var(--teal-default);
   background-color: var(--teal-light);
 }
 
-.secondary:hover {
+.button--secondary:hover {
   background-color: var(--teal-bright);
   scale: var(--scale-150);
 }
 
-.terziary {
+.button--terziary {
   color: var(--anthrazit-default);
   background-color: var(--white);
 }
 
-.terziary:hover {
+.button--terziary:hover {
+  color: var(--teal-default);
+  background-color: var(--teal-light);
+  scale: var(--scale-150);
+}
+
+.button--tag {
+  color: var(--anthrazit-default);
+  background-color: var(--white);
+  border-style: solid;
+  border-color: var(--teal-default);
+  border-width: 1px;
+}
+
+.button--tag:hover {
   color: var(--teal-default);
   background-color: var(--teal-light);
   scale: var(--scale-150);
@@ -235,6 +273,7 @@ html {
   align-items: left;
   gap: 1em;
   margin-bottom: 3em;
+  justify-content: flex-start;
 }
 
 .circle {
