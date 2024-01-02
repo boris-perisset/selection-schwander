@@ -31,6 +31,7 @@
   --font-size-100: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
   --font-size-080: 0.9rem;
   --font-size-060: 0.8rem;
+  --font-size-040: 0.7rem;
   
  
   /* Font Weight */
@@ -104,7 +105,7 @@
 html {
   font-family: var(--body-font);
   line-height: var(--lineheight-200);
-  font-size: 100%;
+  font-size: 112.5%;
   font-weight: var(--font-regular);
   color: var(--anthrazit-default);
 }
@@ -162,6 +163,13 @@ html {
 
 .font-060 {
   font-size: var(--font-size-060);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-200);
+  margin-bottom:  var(--type-space-080);
+}
+
+.font-040 {
+  font-size: var(--font-size-040);
   font-weight: var(--font-regular);
   line-height: var(--lineheight-200);
   margin-bottom:  var(--type-space-080);

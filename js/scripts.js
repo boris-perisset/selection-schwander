@@ -7,6 +7,7 @@ const fontSize5a = document.getElementById("currentSize5a")
 const fontSize6a = document.getElementById("currentSize6a")
 const fontSize7a = document.getElementById("currentSize7a")
 const fontSize8a = document.getElementById("currentSize8a")
+const fontSize8b = document.getElementById("currentSize8b")
 const fontSize9a = document.getElementById("currentSize9a")
 
 function calculate(){
@@ -19,6 +20,7 @@ let computedFontSize5a = window.getComputedStyle(document.getElementById("size5a
 let computedFontSize6a = window.getComputedStyle(document.getElementById("size6a")).fontSize
 let computedFontSize7a = window.getComputedStyle(document.getElementById("size7a")).fontSize
 let computedFontSize8a = window.getComputedStyle(document.getElementById("size8a")).fontSize
+let computedFontSize8b = window.getComputedStyle(document.getElementById("size8b")).fontSize
 let computedFontSize9a = window.getComputedStyle(document.getElementById("size9a")).fontSize
 
 fontSize1a.innerText = `Current Font-Size in Pixel: ${computedFontSize1a}`
@@ -29,6 +31,7 @@ fontSize5a.innerText = `Current Font-Size in Pixel: ${computedFontSize5a}`
 fontSize6a.innerText = `Current Font-Size in Pixel: ${computedFontSize6a}`
 fontSize7a.innerText = `Current Font-Size in Pixel: ${computedFontSize7a}`
 fontSize8a.innerText = `Current Font-Size in Pixel: ${computedFontSize8a}`
+fontSize8b.innerText = `Current Font-Size in Pixel: ${computedFontSize8b}`
 fontSize9a.innerText = `Current Font-Size in Pixel: ${computedFontSize9a}`
 viewportWidth.innerText = `Current Viewport Width: ${window.innerWidth}px`
 }
