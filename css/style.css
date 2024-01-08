@@ -74,7 +74,9 @@
   
   --white: #FFFFFF;
   
-  /*Some Spacing Tests*/
+  /* Some Spacing Tests */
+
+  /* Typespace */
   --spacing-ratio: 1.618em;
   --type-space-020: 0.2em;
   --type-space-030: 0.3em;
@@ -86,7 +88,18 @@
   --type-space-200: calc(1em + var(--spacing-ratio));
   --type-space-300: calc(1em + var(--spacing-ratio) * 2);
   --type-space-400: calc(1em + var(--spacing-ratio) * 3);
+  white--type-space-500: calc(1em + var(--spacing-ratio) * 4);
+  --type-space-600: calc(1em + var(--spacing-ratio) * 5);
   
+    /*Whitespace*/
+    --white-space-060: 2.5vw;
+    --white-space-080: 3.33vw;
+    --white-space-100: 4.5vw;
+    --white-space-200: 6vw;
+    --white-space-300: 8vw;
+    --white-space-400: 10.75vw;
+    --type-space-500: 14.2vw;
+    --white-space-600: 18.9vw;
    
   /* Tokens */
   --corner-default: 0.50em;
